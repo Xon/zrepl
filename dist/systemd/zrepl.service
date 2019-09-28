@@ -1,6 +1,7 @@
 [Unit]
 Description=zrepl daemon
 Documentation=https://zrepl.github.io
+After=network.target network-online.target systemd-networkd-wait-online.service
 
 [Service]
 Type=simple
